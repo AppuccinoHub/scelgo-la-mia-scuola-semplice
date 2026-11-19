@@ -276,10 +276,66 @@ h1,h2,h3,.bk,.brand,.stepbar .big,.sc .nm{font-family:'Lexend','Verdana',sans-se
 .allhd{margin:0 0 8px}
 @media(max-width:700px){.sc.mini img{height:44px}}
 @media(max-width:700px){.grid17.gridall{grid-template-columns:1fr 1fr}.gridall .sc .nm{overflow-wrap:break-word;word-break:normal}.gridall .sc.mini img{height:40px}}
+/* ---- home v2: project synopsis + 4-step preview ---- */
+.home2{max-width:880px;margin:0 auto;text-align:left}
+.home2 h1{font-size:2.1rem;margin:.1em 0 .1em;text-align:center}
+.projl{display:flex;align-items:center;gap:12px;justify-content:center;margin:0 0 8px}
+.proj{font-size:1.6rem;font-weight:800;margin:0;color:var(--navy)}
+.card.syn{padding:12px 20px}
+.card.syn p{margin:.3em 0;font-size:1.08rem;line-height:1.45}
+.card.syn .okl{font-weight:800;background:#fff3c9;border:2px solid var(--navy);border-radius:12px;padding:6px 12px;margin:.5em 0 .1em}
+.prev{list-style:none;margin:10px 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.prev li{display:flex;align-items:center;gap:10px;background:var(--paper);border:2px solid var(--navy);border-radius:14px;padding:8px 12px;font-weight:700;font-size:1rem;line-height:1.25}
+.prev .num{flex:none;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--cream);display:grid;place-items:center;font-weight:800}
+.go{text-align:center;margin-top:6px}
+.tapl{margin:0 0 6px;font-weight:800;font-size:1.05rem;color:var(--navy)}
+.go .btn.xl{width:100%;min-height:78px;font-size:1.4rem}
+.row2{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.home2 .foot{text-align:center;margin:10px 0 0}
+@media(max-width:800px){.prev{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.prev{grid-template-columns:1fr}.home2 h1{font-size:1.7rem}.go .btn.xl{font-size:1.2rem;min-height:70px}}
+/* obvious Next */
+.btn.nx{min-width:120px;font-size:1.1rem}
+.btn.nx.ready{box-shadow:0 0 0 3px var(--cream),0 0 0 6px var(--navy)}
+.btn.nx:disabled{opacity:.4}
+@media(prefers-reduced-motion:no-preference){.btn.nx.ready{animation:nxp 1.8s ease-in-out 3}}
+@keyframes nxp{50%{box-shadow:0 0 0 3px var(--cream),0 0 0 11px var(--navy)}}
+.navmid .hint.go{color:var(--navy);font-weight:800}
+.dirl p{font-weight:700}
+/* ---- Listen on every type tile ---- */
+.tw{position:relative;min-width:0}
+.tw>.sc{width:100%;height:100%}
+.tsay{position:absolute;top:6px;right:6px;z-index:2}
+.tsay .say{background:var(--paper);box-shadow:0 0 0 2px var(--cream)}
+.sc.mini+.tsay .say{min-width:40px;min-height:40px}
+/* ---- teacher view: check questions ---- */
+.tq{margin-top:12px;border:2px dashed var(--navy);border-radius:14px;padding:8px 14px;background:#FFFBEA}
+.tq h3{margin:0 0 4px;font-size:1.05rem}.tq ol{margin:.3em 0 .5em;padding-left:1.4em}.tq li{margin:.25em 0}.tq .ans{color:var(--ok);font-weight:700}
+/* ---- Class view: bigger text and Listen buttons for a projector ---- */
+body.cls{--fs:26px}
+body.cls .say{min-width:60px;min-height:60px;border-width:3px}
+body.cls .say svg{width:32px;height:32px}
+body.cls .btn{min-height:64px;font-size:1.1rem}
+body.cls .tsay .say{min-width:56px;min-height:56px}
+body.cls .tbtn.on{background:var(--navy);color:var(--cream)}
+body.cls .wrap{max-width:1280px}
+body.cls .stepbar .big{font-size:1.4rem}
+.home2 h1{font-size:1.75rem;margin:0}
+.card.syn p{font-size:1.02rem;line-height:1.4;margin:.22em 0}
+.prev{margin:8px 0}
+.home2 .foot{margin:6px 0 0}
+.projl{margin:0 0 6px}
+.go .btn.xl{min-height:70px}
+@media(max-width:520px){.proj{font-size:1.3rem;white-space:nowrap}.projl{gap:8px;flex-wrap:nowrap}.home2 h1{font-size:1.5rem;text-align:left}}
+@media(max-width:520px){body.cls .proj{white-space:normal;font-size:1.15rem}body.cls .projl{flex-wrap:wrap}}
+@media(max-width:520px){.dirl{flex-wrap:wrap}.dirl p{flex:1 1 55%;min-width:0}.dirl .push{margin-left:0}
+body.cls .tools{flex-wrap:wrap;justify-content:flex-end}body.cls .top{flex-wrap:wrap}body.cls .tbtn{padding:6px 10px}
+body.cls .tw .tile,body.cls .tile{font-size:.82rem;overflow-wrap:normal;word-break:normal;hyphens:none}}
 
 .dlc h2{margin:0 0 6px}.dlc p{margin:.2em 0 .5em}.dlg{display:grid;gap:14px;grid-template-columns:1fr 1fr}@media(max-width:700px){.dlg{grid-template-columns:1fr}}
-.dlc .btn{margin-top:6px}</style></head>
+.dlc .btn{margin-top:6px}.th{margin-top:22px}</style></head>
 <body><div class="wrap"><div class="top"><span class="brand"><i></i>Scelgo la mia scuola</span></div>
 <main><h1>Downloads</h1><p>Print the packet, or use the app. Both do the same project.</p>
-<div class="dlg"><section class="card dlc"><h2>Open the app</h2><p>The project in your browser. Needs github.io to open.</p><p class="small">8.6 MB</p><a class="btn co" href="index.html">Open the app</a></section><section class="card dlc"><h2>Offline copy of the app</h2><p>One file. Save it to Google Drive, a USB stick or Classroom, then open it with Chrome. Needs no internet. Sound, pictures and school facts are all inside.</p><p class="small">7.4 MB</p><a class="btn co" href="Scelgo-la-mia-scuola-semplice.html" download>Download the offline copy</a></section><section class="card dlc"><h2>Student packet (PDF)</h2><p>6 pages to print: one page for each of the 4 steps, then 6 school cards on 2 pages.</p><p class="small">353 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>School files (PDF): the full school list</h2><p>The paper list of all 17 school types, each with real Rome schools and facts. Use it with the packet if you want a different school.</p><p class="small">641 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-STUDENT-School-files.pdf">Open the PDF</a></section><section class="card dlc"><h2>Student packet (Word)</h2><p>The same 6 pages, so you can edit them.</p><p class="small">803 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.docx" download>Download the Word file</a></section></div>
+<div class="dlg"><section class="card dlc"><h2>Open the app</h2><p>The project in your browser. Needs github.io to open.</p><p class="small">9.5 MB</p><a class="btn co" href="index.html">Open the app</a></section><section class="card dlc"><h2>Offline copy of the app</h2><p>One file. Save it to Google Drive, a USB stick or Classroom, then open it with Chrome. Needs no internet. Sound, pictures and school facts are all inside.</p><p class="small">9.5 MB</p><a class="btn co" href="Scelgo-la-mia-scuola-semplice.html" download>Download the offline copy</a></section><section class="card dlc"><h2>Student packet (PDF)</h2><p>7 pages to print: a Start here page, one page for each of the 4 steps, then 6 school cards on 2 pages.</p><p class="small">364 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>School files (PDF): the full school list</h2><p>The paper list of all 17 school types, each with real Rome schools and facts. Use it with the packet if you want a different school.</p><p class="small">641 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-STUDENT-School-files.pdf">Open the PDF</a></section><section class="card dlc"><h2>Student packet (Word)</h2><p>The same 7 pages, so you can edit them.</p><p class="small">803 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Check-in (PDF)</h2><p>One sheet with 18 short questions, 3 for each of the 6 school cards in the packet. Students find each answer on the card.</p><p class="small">84 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-Check-in.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Check-in (Word)</h2><p>The same sheet, so you can edit it.</p><p class="small">36 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-Check-in.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Print packet (PDF)</h2><p>The student packet and the Check-in together: 9 pages, one print job.</p><p class="small">369 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-PRINT-PACKET.pdf" download>Download the PDF</a></section></div>
+<h2 class="th">For the teacher</h2><p>The answers are here. Students do not need this section.</p><div class="dlg"><section class="card dlc"><h2>Check questions + answer key (PDF)</h2><p>For the teacher. 3 questions for each of the 17 school types, with the answer and where it is on the card.</p><p class="small">207 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-TEACHER-Check-questions-answer-key.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Check questions + answer key (Word)</h2><p>The same key, so you can edit it.</p><p class="small">39 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-TEACHER-Check-questions-answer-key.docx" download>Download the Word file</a></section></div>
 <p class="foot"><a href="index.html">Back to the app</a></p></main></div></body></html>
