@@ -6,6 +6,7 @@
 - Downloads page (student packet, offline copy): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/downloads.html
 - Offline copy (one file, save to Drive or USB): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/Scelgo-la-mia-scuola-semplice.html
 - Student packet PDF (6 pages): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/pdf/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.pdf
+- School files PDF (the full paper school list, all 17 types): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/pdf/Scelgo-la-mia-scuola-STUDENT-School-files.pdf
 - Student packet Word file: https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/docx/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.docx
 
 The earlier, longer version is a separate project and is unchanged: https://appuccinohub.github.io/scelgo-la-mia-scuola/
@@ -16,6 +17,7 @@ A simple Italian 2 project for everyone. Students pick an Italian high school in
 
 - Home: **Start the project** and **Schools** (the Schools screen is always open).
 - 4 steps, one screen each: How it works, Pick a school, Write your script, Record.
+- Step 2 shows 6 school cards. A student who wants none of them taps **None of these? See all school types** to pick from all 17 types, each with a real Rome school card. The pick flows into the script and slides the same way.
 - Listen buttons play recorded Italian and English audio stored inside the file (no computer voices needed, works on a classroom projector).
 - Tap any yellow Italian word, or any abbreviation in a school name (IIS, ITIS, IPSEOA...), for a small Learn more panel that works offline, with a "Learn more at home" link to an official site.
 - Works from one file with no internet. No names are asked or stored.
