@@ -208,14 +208,14 @@ h1,h2,h3,.bk,.brand,.stepbar .big,.sc .nm{font-family:'Lexend','Verdana',sans-se
 .opt:disabled{cursor:default}
 .fb{margin-top:6px}
 .grid6{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
-.sc img{aspect-ratio:auto;height:112px;object-fit:cover}
+.sc img{aspect-ratio:auto;height:100px;object-fit:cover}
 .sc{border-width:3px;padding:10px}
 .sc .nm{font-size:1rem}
-.sc.mini img{height:56px}
-.sc.mini{padding:8px;gap:4px}
+.sc.mini img{height:44px}
+.sc.mini{padding:6px;gap:4px}
 .sc.mini .nm{font-size:.85rem;line-height:1.2}
 .sc small{font-size:.75rem}
-.grid17{display:grid;gap:8px;grid-template-columns:repeat(6,1fr)}
+.grid17{display:grid;gap:6px;grid-template-columns:repeat(6,1fr)}
 @media(max-width:700px){.grid6{grid-template-columns:1fr 1fr}.grid17{grid-template-columns:1fr 1fr 1fr}}
 .h1s{font-size:1.6rem;margin:0 0 6px}
 .fact{grid-template-columns:150px 1fr;gap:16px}
@@ -277,7 +277,7 @@ h1,h2,h3,.bk,.brand,.stepbar .big,.sc .nm{font-family:'Lexend','Verdana',sans-se
 @media(max-width:700px){.sc.mini img{height:44px}}
 @media(max-width:700px){.grid17.gridall{grid-template-columns:1fr 1fr}.gridall .sc .nm{overflow-wrap:break-word;word-break:normal}.gridall .sc.mini img{height:40px}}
 /* ---- home v2: project synopsis + 4-step preview ---- */
-.home2{max-width:880px;margin:0 auto;text-align:left}
+.home2{max-width:980px;margin:0 auto;text-align:left}
 .home2 h1{font-size:2.1rem;margin:.1em 0 .1em;text-align:center}
 .projl{display:flex;align-items:center;gap:12px;justify-content:center;margin:0 0 8px}
 .proj{font-size:1.6rem;font-weight:800;margin:0;color:var(--navy)}
@@ -322,7 +322,7 @@ body.cls .wrap{max-width:1280px}
 body.cls .stepbar .big{font-size:1.4rem}
 .home2 h1{font-size:1.75rem;margin:0}
 .card.syn p{font-size:1.02rem;line-height:1.4;margin:.22em 0}
-.prev{margin:8px 0}
+.prev{margin:2px 0}
 .home2 .foot{margin:6px 0 0}
 .projl{margin:0 0 6px}
 .go .btn.xl{min-height:70px}
@@ -333,7 +333,7 @@ body.cls .tools{flex-wrap:wrap;justify-content:flex-end}body.cls .top{flex-wrap:
 body.cls .tw .tile,body.cls .tile{font-size:.82rem;overflow-wrap:normal;word-break:normal;hyphens:none}}
 /* v7: five steps, word warm-up */
 .prev{grid-template-columns:repeat(5,1fr);gap:8px}
-.prev li{padding:6px 8px;gap:8px;font-size:.9rem}
+.prev li{padding:4px 6px;gap:6px;font-size:.8rem;line-height:1.15}
 .prev .num{width:30px;height:30px}
 @media(max-width:800px){.prev{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.prev{grid-template-columns:1fr}}
@@ -369,15 +369,28 @@ body.cls .tw .tile,body.cls .tile{font-size:.82rem;overflow-wrap:normal;word-bre
 .s2b{display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:800px){.s2b{grid-template-columns:1.05fr .95fr;align-items:start}}
 .mapwrap{margin:0 0 4px}
-.romemap{width:100%;height:auto;aspect-ratio:720/640;display:block;background:#F3EFE6;border:2px solid var(--navy);border-radius:16px;cursor:zoom-in}
-.romemap.big{cursor:default;max-height:78vh;border-radius:12px}
-.romemap .mlab{font-family:inherit;font-weight:800;fill:#0A1F44;stroke:#F3EFE6;stroke-width:3px;paint-order:stroke fill;pointer-events:none}
+.romemap{width:100%;height:auto;display:block;background:#F3EFE6;border:2px solid var(--navy);border-radius:16px;cursor:zoom-in}
+.romemap.big{cursor:grab;width:100%;height:auto;max-height:none;border-radius:12px}
+.romemap .mlab,.romemap .leg text{font-family:inherit;font-weight:800;fill:#0A1F44;stroke:#F3EFE6;stroke-width:4px;paint-order:stroke fill;pointer-events:none;font-size:14px}
+.romemap .mlab.focus,.romemap .mlab.near,.romemap .mlab.pinlab.focus{font-size:18px}
+.romemap.paper .mlab,.romemap.paper .leg text{font-size:26px}
+.romemap.paper .mlab.pinlab{font-size:18px}
+.romemap.paper .leg text{font-size:22px}
+.romemap .pin .hit{r:18px;fill:#000;opacity:0;pointer-events:all}
+.romemap .pin .dot{r:8px}
+.romemap .pin.pick .dot,.romemap .pin.on .dot{r:11px}
+.romemap .leader{pointer-events:none}
 .romemap .mlab.river{fill:#2A4378;font-style:italic}
 .romemap .pin{cursor:pointer}
 .mapbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:6px}
 .maptap{font-size:.85rem}
-.mapov{position:fixed;inset:0;background:rgba(14,42,91,.86);z-index:40;display:flex;align-items:center;justify-content:center;padding:12px}
-.mapov-box{background:var(--paper);border:3px solid var(--navy);border-radius:16px;padding:10px;max-width:min(960px,100%);width:100%;max-height:100%;overflow:auto}
+.mapov{position:fixed;inset:0;background:rgba(14,42,91,.86);z-index:40;display:flex;align-items:center;justify-content:center;padding:8px}
+.mapov-box{background:var(--paper);border:3px solid var(--navy);border-radius:16px;padding:10px;width:min(1100px,100%);height:auto;max-height:100%;display:flex;flex-direction:column;gap:8px;box-sizing:border-box}
+.mapstage{flex:0 1 auto;min-height:0;max-height:70vh;overflow:hidden;touch-action:none;border:2px solid var(--navy);border-radius:12px;background:#F3EFE6;cursor:grab;position:relative}
+.mapstage-in{transform-origin:0 0;width:100%;height:100%}
+.mapstage .romemap{width:100%;height:auto;border:0;border-radius:0;cursor:grab}
+.mapzoombar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.mapov-h{margin:0}
 .typbar{justify-content:space-between;gap:8px}
 .nowt{font-weight:800}
 .schlist{display:flex;flex-direction:column;gap:8px}
@@ -390,10 +403,31 @@ body.cls .tw .tile,body.cls .tile{font-size:.82rem;overflow-wrap:normal;word-bre
 .schpick .sf{display:block;font-size:.92rem;margin:2px 0}
 .schpick .sf .en{display:block;color:#2A4378;font-weight:500;font-size:.88rem}
 
+.typintro{margin:0 0 4px;line-height:1.3}
+@media(max-width:700px){
+  .typintro{font-size:.92rem}
+  .s2h{font-size:1.15rem;margin:0 0 .3em}
+  .schpick{padding:8px 10px}
+}
+
+@media(max-width:700px){
+  .stepbar{flex-wrap:nowrap;gap:8px;margin:0 0 4px}
+  .stepbar .stt{display:none}
+  .dirl{padding:4px 8px;margin-bottom:4px}
+  .grid6{gap:8px}
+}
+
+.mapwrap{position:relative}
+.pinhits{position:absolute;left:0;top:0;right:0;bottom:0;pointer-events:none}
+.pinhit{position:absolute;width:36px;height:36px;min-width:36px;min-height:36px;padding:0;border:0;background:transparent;transform:translate(-50%,-50%);pointer-events:auto;cursor:pointer}
+.mapframe{position:relative;width:100%;height:auto}
+.mapframe .romemap{width:100%;height:auto;display:block}
+.mapstage .mapframe{width:100%;height:auto}.mapstage .mapframe .romemap{width:100%;height:auto}
+
 .dlc h2{margin:0 0 6px}.dlc p{margin:.2em 0 .5em}.dlg{display:grid;gap:14px;grid-template-columns:1fr 1fr}@media(max-width:700px){.dlg{grid-template-columns:1fr}}
 .dlc .btn{margin-top:6px}.th{margin-top:22px}</style></head>
 <body><div class="wrap"><div class="top"><span class="brand"><i></i>Scelgo la mia scuola</span></div>
 <main><h1>Downloads</h1><p>Print the packet, or use the app. Both do the same project.</p>
-<div class="dlg"><section class="card dlc"><h2>Open the app</h2><p>The project in your browser. Needs github.io to open.</p><p class="small">2.7 MB</p><a class="btn co" href="index.html">Open the app</a></section><section class="card dlc"><h2>Offline copy of the app</h2><p>One file. Save it to Google Drive, a USB stick or Classroom, then open it with Chrome. Needs no internet. Sound, pictures and school facts are all inside.</p><p class="small">2.7 MB</p><a class="btn co" href="Scelgo-la-mia-scuola-semplice.html" download>Download the offline copy</a></section><section class="card dlc"><h2>Student packet (PDF)</h2><p>8 pages to print: a Start here page, one page for each of the 5 steps (Step 2 is pick a type, then a real school; Step 3 is the word warm-up), then 6 type cards on 2 pages.</p><p class="small">397 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Real schools in Rome (PDF)</h2><p>A map of Rome and the list of real schools for every type, with area and sourced facts. Use it with Step 2, in class or offline.</p><p class="small">413 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-School-list.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Real schools in Rome (Word)</h2><p>The same map and list, so you can edit them.</p><p class="small">308 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-School-list.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Student packet (Word)</h2><p>The same 8 pages, so you can edit them.</p><p class="small">805 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Word warm-up (PDF)</h2><p>One page: match 8 Italian words, write 6 words, fill in 6 blanks. It is also page 4 of the packet.</p><p class="small">91 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-Word-warm-up.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Word warm-up (Word)</h2><p>The same sheet, so you can edit it.</p><p class="small">36 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-Word-warm-up.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Check-in (PDF)</h2><p>One sheet: the type and real school the student picked, then short questions about the six types and the example cards in the packet.</p><p class="small">85 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-Check-in.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Check-in (Word)</h2><p>The same sheet, so you can edit it.</p><p class="small">36 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-Check-in.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Print packet (PDF)</h2><p>The student packet, the Real schools in Rome list (with the map), and the Check-in, in one print job.</p><p class="small">675 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-PRINT-PACKET.pdf" download>Download the PDF</a></section></div>
+<div class="dlg"><section class="card dlc"><h2>Open the app</h2><p>The project in your browser. Needs github.io to open.</p><p class="small">2.7 MB</p><a class="btn co" href="index.html">Open the app</a></section><section class="card dlc"><h2>Offline copy of the app</h2><p>One file. Save it to Google Drive, a USB stick or Classroom, then open it with Chrome. Needs no internet. Sound, pictures and school facts are all inside.</p><p class="small">2.7 MB</p><a class="btn co" href="Scelgo-la-mia-scuola-semplice.html" download>Download the offline copy</a></section><section class="card dlc"><h2>Student packet (PDF)</h2><p>8 pages to print: a Start here page, one page for each of the 5 steps (Step 2 is pick a type, then a real school; Step 3 is the word warm-up), then 6 type cards on 2 pages.</p><p class="small">397 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Real schools in Rome (PDF)</h2><p>A map of Rome and the list of real schools for every type, with area and sourced facts. Use it with Step 2, in class or offline.</p><p class="small">425 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-School-list.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Real schools in Rome (Word)</h2><p>The same map and list, so you can edit them.</p><p class="small">448 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-School-list.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Student packet (Word)</h2><p>The same 8 pages, so you can edit them.</p><p class="small">805 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Word warm-up (PDF)</h2><p>One page: match 8 Italian words, write 6 words, fill in 6 blanks. It is also page 4 of the packet.</p><p class="small">91 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-Word-warm-up.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Word warm-up (Word)</h2><p>The same sheet, so you can edit it.</p><p class="small">36 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-Word-warm-up.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Check-in (PDF)</h2><p>One sheet: the type and real school the student picked, then short questions about the six types and the example cards in the packet.</p><p class="small">85 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-Check-in.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Check-in (Word)</h2><p>The same sheet, so you can edit it.</p><p class="small">36 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-STUDENT-Check-in.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Print packet (PDF)</h2><p>The student packet, the Real schools in Rome list (with the map), and the Check-in, in one print job.</p><p class="small">688 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-STUDENT-PRINT-PACKET.pdf" download>Download the PDF</a></section></div>
 <h2 class="th">For the teacher</h2><p>The answers are here. Students do not need this section.</p><div class="dlg"><section class="card dlc"><h2>Word warm-up answer key (PDF)</h2><p>For the teacher. Answers and the reason for each one.</p><p class="small">99 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-TEACHER-Word-warm-up-answer-key.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Word warm-up answer key (Word)</h2><p>The same key, so you can edit it.</p><p class="small">37 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-TEACHER-Word-warm-up-answer-key.docx" download>Download the Word file</a></section><section class="card dlc"><h2>Check questions + answer key (PDF)</h2><p>For the teacher. 3 questions for each of the 17 school types. Question 1 is the type; questions 2 and 3 follow the real school the student picked.</p><p class="small">210 KB</p><a class="btn co" href="pdf/Scelgo-la-mia-scuola-simple-TEACHER-Check-questions-answer-key.pdf" download>Download the PDF</a></section><section class="card dlc"><h2>Check questions + answer key (Word)</h2><p>The same key, so you can edit it.</p><p class="small">39 KB</p><a class="btn co" href="docx/Scelgo-la-mia-scuola-simple-TEACHER-Check-questions-answer-key.docx" download>Download the Word file</a></section></div>
 <p class="foot"><a href="index.html">Back to the app</a></p></main></div></body></html>
