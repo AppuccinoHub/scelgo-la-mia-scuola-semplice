@@ -2,7 +2,7 @@
 
 **Live links**
 
-- App: https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/?v=10
+- App: https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/?v=11
 - Downloads page (student packet, Word warm-up, Check-in, offline copy): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/downloads.html
 - Offline copy (one file, about 2.7 MB, save to Drive or USB): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/Scelgo-la-mia-scuola-semplice.html
 - Student packet PDF (8 pages): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/pdf/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.pdf
