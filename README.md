@@ -2,9 +2,9 @@
 
 **Live links**
 
-- App: https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/?v=11
+- App: https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/?v=12
 - Downloads page (student packet, Word warm-up, Check-in, offline copy): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/downloads.html
-- Offline copy (one file, about 2.7 MB, save to Drive or USB): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/Scelgo-la-mia-scuola-semplice.html
+- Offline copy (one file, about 3.4 MB, save to Drive or USB): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/Scelgo-la-mia-scuola-semplice.html
 - Student packet PDF (8 pages): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/pdf/Scelgo-la-mia-scuola-simple-STUDENT-PACKET.pdf
 - Word warm-up sheet PDF (students, 1 page): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/pdf/Scelgo-la-mia-scuola-simple-STUDENT-Word-warm-up.pdf
 - Real schools in Rome PDF (map + list of real schools for every type): https://appuccinohub.github.io/scelgo-la-mia-scuola-semplice/pdf/Scelgo-la-mia-scuola-simple-STUDENT-School-list.pdf
